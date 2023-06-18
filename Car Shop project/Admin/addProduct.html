@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+            integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+            crossorigin="anonymous">
+    </head>
+    <body class="bg-light">
+        <form
+            class="w-50 my-5 p-4 mx-auto bg-white border rounded rounded-lg shadow shadow-lg">
+            <div class="form-group" id="selectDiv">
+                <select
+                    class="custom-select custom-select-lg" id="selectCategories"
+                    style="height: 40px !important;"
+                    >
+                    
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="productTitleInput">Product title</label>
+                <input
+                    type="text"
+                    id="productTitleInput"
+                    class="form-control"
+                    required="required">
+            </div>
+            <div class="form-group">
+                <label for="productPriceInput">Product price</label>
+                <input
+                    type="number"
+                    id="productPriceInput"
+                    class="form-control"
+                    required="required">
+            </div>
+            <div class="form-group">
+                <label for="productDescriptionInput">Product description</label>
+                <textarea
+                    id="productDescriptionInput"
+                    class="textarea"
+                    style="width: 100%; resize: none; min-height: 180px;  outline: none;"
+                    required="required"></textarea>
+            </div>
+            <div class="form-group">
+                <label>Product image</label>
+                <div class="custom-file">
+                    <!---->
+                   <input type="file" id="productImageInput" accept="image/*" title="Select an image file">
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="button" value="Add product" class="btn btn-dark w-100" onclick="addProduct()">
+            </div>
+        </form>
+        <script src="./js/addProduct.js"></script>
+    </body>
+</html>

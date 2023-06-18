@@ -1,0 +1,31 @@
+@media (max-width:768px) {
+    h1{
+        font-size: 45px !important;
+    }
+    tbody tr a,i,td {
+        font-size: 16px !important
+    }
+
+    .login {
+        top: 55%;
+        left: 50%;
+        width: 300px;
+    }
+
+.wrongLogin {
+    font-size: 13px !important;
+    top: 63%;
+}
+
+.categoryPart {
+    overflow:scroll;
+}
+
+.productPart {
+        overflow:scroll;   
+}
+
+body {
+    overflow-x: hidden !important;
+}
+}
