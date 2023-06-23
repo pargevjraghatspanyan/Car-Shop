@@ -72,8 +72,8 @@ function changeProductCount(id , value) {
     let cartProducts = JSON.parse(localStorage.getItem(`cartProducts`))
     let product = cartProducts.find(cartProduct => cartProduct.id == id)
 
-   value ? ++product.productCount : --product.productCount
-   product.cartPrice = product.price * product.productCount
+    value ? ++product.productCount : --product.productCount
+    product.cartPrice = product.price * product.productCount
 
    localStorage.setItem(`cartProducts` , JSON.stringify(cartProducts))
    cartRefresh()

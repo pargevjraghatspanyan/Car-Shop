@@ -38,7 +38,7 @@ function editProduct() {
     }
 
     product.title = productTitleInput.value 
-    product.price = productPriceInput.value.trim().split(' ').join('')
+    product.price = productPriceInput.value
     product.description = productDescriptionInput.value 
     product.category = select.value 
    

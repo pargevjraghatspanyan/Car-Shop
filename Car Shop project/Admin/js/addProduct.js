@@ -10,6 +10,7 @@ window.addEventListener(`keydown` , function(e) {
     }
 })
 
+
 function setCategories() {
     select.innerHTML = ``
     myCategoryList = JSON.parse(localStorage.getItem(`categoryList`))
